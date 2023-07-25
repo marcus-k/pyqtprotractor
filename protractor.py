@@ -112,7 +112,7 @@ class Protractor(QLabel):
 
     def __init__(self, parent):
         super().__init__(parent, Qt.WindowType.FramelessWindowHint)
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
+        self.setWindowFlags(Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground, True)
         # self.setAttribute(Qt.WA_TransparentForMouseEvents)
         self.setStyleSheet("QLabel#angle { font-size: 20px; background-color: white; padding: 2px; }")
